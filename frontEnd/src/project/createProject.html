@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,99 @@
     <link rel="stylesheet" href="../style.css">
 
 </head>
+
 <body>
     <main id="">
         <h1>Criação de Novo Projeto</h1>
-        <form id="form-createProject">
-            <label for="projectName">Nome do Projeto:</label><br>
-            <input type="text" id="projectName" name="projectName"><br><br>
-            <label for="projectDesc">Descrição do Projeto:</label><br>
-            <textarea id="projectDesc" name="projectDesc"></textarea><br><br>
-            <input type="submit" value="Criar Projeto">
-        </form>
+        <form class="p-4">
+
+  <div class="mb-3">
+    <label for="cliente" class="form-label">Cliente:</label>
+    <input type="text" class="form-control" id="cliente" name="cliente">
+  </div>
+
+  <div class="mb-3">
+    <label for="projeto" class="form-label">Projeto:</label>
+    <input type="text" class="form-control" id="projeto" name="projeto">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">GerAcesso:</label><br>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="geracesso" id="geracessoSim" value="sim">
+      <label class="form-check-label" for="geracessoSim">Sim</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="geracesso" id="geracessoNao" value="nao">
+      <label class="form-check-label" for="geracessoNao">Não</label>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">GerREP:</label><br>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="gerrep" id="gerrepSim" value="sim">
+      <label class="form-check-label" for="gerrepSim">Sim</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="gerrep" id="gerrepNao" value="nao">
+      <label class="form-check-label" for="gerrepNao">Não</label>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="portarias" class="form-label">Quantidade de Portarias:</label>
+    <input type="number" class="form-control" id="portarias" name="portarias">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Módulo Web:</label><br>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="moduloWeb" id="moduloWebSim" value="sim">
+      <label class="form-check-label" for="moduloWebSim">Sim</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="moduloWeb" id="moduloWebNao" value="nao">
+      <label class="form-check-label" for="moduloWebNao">Não</label>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Agendamento de Visitas:</label><br>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="agendamentoVisitas" id="agendamentoVisitasSim" value="sim">
+      <label class="form-check-label" for="agendamentoVisitasSim">Sim</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="agendamentoVisitas" id="agendamentoVisitasNao" value="nao">
+      <label class="form-check-label" for="agendamentoVisitasNao">Não</label>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Entrega EPI:</label><br>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="entregaEpi" id="entregaEpiSim" value="sim">
+      <label class="form-check-label" for="entregaEpiSim">Sim</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="entregaEpi" id="entregaEpiNao" value="nao">
+      <label class="form-check-label" for="entregaEpiNao">Não</label>
+    </div>
+  </div>
+  <div class="mb-3">
+    
+  </div>
+
+  <button type="submit" class="btn btn-primary">Salvar</button>
+
+</form>
+
     </main>
     <footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="../script.js"></script>
     </footer>
 </body>
+
 </html>
