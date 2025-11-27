@@ -41,3 +41,24 @@
 |-- /utils         // Funções auxiliares (logs, formatação)
 |-- app.js         // Ponto de entrada do servidor
 |-- package.json
+
+
+
+
+
+
+
+
+git checkout main
+git push origin main
+# Se você realmente precisar levar o que foi feito em 'main' para 'homologacao'
+git checkout homologacao
+git merge main
+git push origin homologacao
+
+git add .
+git commit -m "Salvando trabalho pendente antes da reestruturação"
+git push origin homologacao
+
+# Puxe as últimas alterações da branch main do GitHub: Este é o passo crucial. Ele trará todas as atualizações que você enviou de casa.
+git pull origin main
